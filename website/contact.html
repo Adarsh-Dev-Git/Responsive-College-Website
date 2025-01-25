@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>UNIVERSITY WEBSITE</title>
+	<link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?
+family=Poppins: wght@100;200;300;400; 600; 700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+</head>
+<body>
+	<section class="sub-header">
+		<nav>
+			<a href="index.html"><img src="images/cce.png"></a>
+			<div class="nav-links" id="navLinks">
+			  <i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="course.html">COURSE</a></li>
+					<li><a href="blog.html">BLOG</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+		<h1>Contact Us</h1>
+	</section>
+
+<!------- Contact us ------>
+
+<section class="location">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9334.807099428064!2d76.20924053764661!3d10.357638037739804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7f65a7d7bc725%3A0x22dc855ba6cace68!2sChrist%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1737726038221!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section class="contact-us">
+
+	<div class="row">
+		<div class="contact-col">
+			<i class="fa fa-home"></i>
+			<span>
+				<h5>Christ College Road, Irinjalakkuda</h5>
+				<p>Thrissur, Kerala, IN</p>
+			</span>
+		</div>
+		<div>
+			<i class="fa fa-envelope-o"></i>
+			<span>
+				<h5>contact@cce.edu.in</h5>
+				<p>Email us your query</p>
+			</span>
+		</div>
+
+		<div class="contact-col">
+			<div>
+			<i class="fa fa-phone"></i>
+			<span>
+				<h5> 0480
+					2825355</h5>
+				<p>Monday to Saturday, 10AM to 6PM</p>
+			</span>
+		    </div>
+		</div>
+	</div>
+<div class="contact-col">
+
+	<form action="connect.php" method="post">
+		<input type="text" name="Name" placeholder="Enter Your Name" required>
+		<input type="email" name="Email" placeholder="Enter Email Adress" required>
+		<input type="text" name="Subject" placeholder="Enter Your Subject" required>
+		<textarea rows="8" name="Message" placeholder="Message" required></textarea>
+		<button type="submit" name="submit" class="hero-btn red-btn">Send Message</button>
+	</form>
+</div>
+</section>
+<!-------- footer ------>
+
+<section class="footer">
+	<h4>About Us</h4>
+	<p>Christ College of Engineering (CCE), established in 2015, is affiliated to APJ Abdul Kalam Technological University, Thiruvananthapuram; and is recognized by AICTE, New Delhi. This college was found at a time when starting a new engineering college was not considered as a sensible proposition. In its short span of existence, exceeding all expectations and proving all critics wrong, Christ College of Engineering has managed to create ripples on the academic front in the university, so much so that today the college is being recognized as one of the best self-financing engineering colleges in Kerala.
+		Staff and students are at the center of this success story. No stone is being left unturned in ensuring that along with academics, the students get the right amount of exposure required for tomorrow’s successful global citizen, through the various initiatives held at this campus. With the kind of transformative learning model in place here, the college is well on its way to making a positive impact on our society and nation at large.</p>
+	<div class="icons">
+		<i class="fa fa-facebook"></i>
+		<i class="fa fa-twitter"></i>
+		<i class="fa fa-instagram"></i>
+		<i class="fa fa-linkedin"></i>
+	</div>	
+	<p>Made With <i class="fa fa-heart-o"></i> By ADARSH </p>
+</section>
+
+
+<script>
+	
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+</script>
+	
+</body>
+</html>
